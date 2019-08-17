@@ -1,0 +1,27 @@
+/* Start: App CSS */
+
+html,
+body {
+    height: 100%
+}
+
+
+/* Spinner CSS */
+.loader {
+    border: 12px solid #fff;
+    border-top: 12px solid #000;
+    border-radius: 50%;
+    width: 96px;
+    height: 96px;
+    animation: spin 1.5s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

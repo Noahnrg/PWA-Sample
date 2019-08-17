@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Basic -->
+    <title>PWA Example</title>
+    <meta name="Description" content="PWA made by Noah Gomez">
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0, shrink-to-fit=no">
+
+    <!-- index.html CSS -->
+    <link rel="stylesheet" href="./index.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Manifest & Theme color Tag -->
+    <link rel="manifest" href="./manifest.json">
+    <meta name="theme-color" content="#db5945">
+
+    <!--Apple Shortcut Icons -->
+    <link rel="apple-touch-icon" href="./images/icons/icon-192x192.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./images/icons/icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/icons/icon-192x192.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="./images/icons/icon-192x192.png">
+
+    <!-- Apple Launch Screens -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <!-- iPhone Xs Max (1242px x 2688px) -->
+    <link media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3)"
+        rel="apple-touch-startup-image" href="./images/splash-screen/1242x2688.png">
+    <!-- iPhone Xr (828px x 1792px) -->
+    <link media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2)"
+        rel="apple-touch-startup-image" href="./images/splash-screen/828x1792.png">
+    <!-- iPhone X, Xs (1125px x 2436px) -->
+    <link media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)"
+        rel="apple-touch-startup-image" href="./images/splash-screen/1125x2436.png">
+    <!-- iPhone 8 Plus, 7 Plus, 6s Plus, 6 Plus (1242px x 2208px) -->
+    <link media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3)"
+        rel="apple-touch-startup-image" href="./images/splash-screen/1242x2208.png">
+    <!-- iPhone 8, 7, 6s, 6 (750px x 1334px) -->
+    <link media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)"
+        rel="apple-touch-startup-image" href="./images/splash-screen/750x1334.png">
+    <!-- iPad Pro 12.9" (2048px x 2732px) -->
+    <link media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)"
+        rel="apple-touch-startup-image" href="./images/splash-screen/2048x2732.png">
+    <!-- iPad Pro 11” (1668px x 2388px) -->
+    <link media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2)"
+        rel="apple-touch-startup-image" href="./images/splash-screen/1668x2388.png">
+    <!-- iPad Pro 10.5" (1668px x 2224px) -->
+    <link media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2)"
+        rel="apple-touch-startup-image" href="./images/splash-screen/1668x2224.png">
+    <!-- iPad Mini, Air (1536px x 2048px) -->
+    <link media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2)"
+        rel="apple-touch-startup-image" href="./images/splash-screen/1536x2048.png">
+
+</head>
+
+<!-- Body -->
+
+<body>
+    <div class="container h-100">
+        <div class="row h-100">
+
+            <div class="card m-auto" style="width:360px">
+                <div class="card-body text-center">
+                    <h4 class="card-title">PWA Example App</h4>
+                    <p class="card-text" id="card-text">[Description Text Goes Here]</p>
+                    <button type="button" class="btn btn-primary" data-toggle="modal"
+                        data-target="#exampleModalCenter">Show Overlay</button>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- Boostrap Modal -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="loader m-auto"></div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <!-- App JavaScript -->
+    <script src="index.js"></script>
+    <script>init();</script>
+</body>
+
+</html>
+
+<!-- End Doc-->
