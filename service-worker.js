@@ -1,7 +1,7 @@
 /* Service Worker JavaScript File */
 
 /* Cache names */
-const cacheNameForApp = 'app-cache-v1';
+const cacheName = 'app-cache-v1';
 const cacheNameForExternalJS = 'app-import-cache-v1';
 
 // Array of Assets to Cache; These assets shouldnt change, or if they do, it's infrequent.
