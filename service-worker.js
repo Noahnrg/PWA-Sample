@@ -8,9 +8,9 @@ const cacheName = 'app-cache-v1';
 
 // Array of Assets to Cache; These assets shouldnt change, or if they do, it's infrequent.
 const AssetsToCache = [
-'./',
-'./index.html',
-'./app.js'
+// './',
+// './index.html',
+// './app.js'
 
 // './css/bootstrap.min.css'
 //    './css/app.css'
